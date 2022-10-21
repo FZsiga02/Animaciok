@@ -1,18 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonBounce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bounce"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonFadeIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fade in"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonFadeOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fade out"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonRotate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rotate"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonZoomIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zoom in"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonZoomOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zoom out"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBounce"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Bounce"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textVIewFadeIn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Fade in"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewFadeOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Fade out"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewRotate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Rotate"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewZoomIn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ZoomIn"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewZoomOut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Zoom out"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
