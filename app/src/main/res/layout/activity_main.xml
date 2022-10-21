@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -74,7 +75,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Bounce"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/textVIewFadeIn"
@@ -82,7 +84,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Fade in"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/textViewFadeOut"
@@ -90,7 +93,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Fade out"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/textViewRotate"
@@ -98,7 +102,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Rotate"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/textViewZoomIn"
@@ -106,7 +111,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="ZoomIn"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/textViewZoomOut"
@@ -114,10 +120,24 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Zoom out"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:gravity="center"/>
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFrameAnim"
+        android:text="Frame animation"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/imageViewFrameAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_anim"/>
 
 </LinearLayout>
