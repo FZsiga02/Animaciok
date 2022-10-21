@@ -109,5 +109,7 @@ public class MainActivity extends AppCompatActivity {
         rotate = AnimationUtils.loadAnimation(MainActivity.this,R.anim.rotate);
         zoomIn = AnimationUtils.loadAnimation(MainActivity.this,R.anim.zoom_in);
         zoomOut = AnimationUtils.loadAnimation(MainActivity.this,R.anim.zoom_out);
+        //ImageView
+        imageViewFrameAnim = findViewById(R.id.imageViewFrameAnim);
     }
 }
